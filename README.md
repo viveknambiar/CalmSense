@@ -22,6 +22,9 @@
                                                                            │
 [Windows Browser (Chrome/Edge)] ◄──(GET /vitals.json)── [Python HTTP Server :8080]
 ```
+The sample video is in this link
+
+https://youtu.be/bbfvY9Ayhko
 
 * **`main.cpp`:** Processes video frames with SmartSpectra SDK v3.5+ and OpenCV, evaluates the 3-stage risk model, and appends JSON telemetry lines to `vitals_stream.jsonl`.
 * **`vitals_stream.jsonl`:** Local newline-delimited JSON queue generated at runtime by the C++ backend.

@@ -78,13 +78,13 @@ std::vector<int64_t> detect_hand_to_ear_timestamps(const std::string& video_path
 
 int main() {
 	// https://physiology.presagetech.com/auth/login?source=registered
-    const std::string api_key = "PUT_PRESAGETECH_API_KEY";
+    const std::string api_key = "YOUR_PRESAGE_API_KEY";
     const std::string video_path = "test_video.mp4";
     const std::string log_path = "vitals_stream.jsonl";
 
-	if (api_key.empty() || api_key == "PUT_PRESAGETECH_API_KEY") {
+	if (api_key.empty() || api_key == "YOUR_PRESAGE_API_KEY") {
             throw std::runtime_error(
-                "Missing Presage API key! Replace 'PUT_PRESAGETECH_API_KEY' in main.cpp "
+                "Missing Presage API key! Replace 'YOUR_PRESAGE_API_KEY' in main.cpp "
             );
         }
     if (!std::filesystem::exists(video_path)) {
